@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>React Electron Webpack</title>
+    <link href="./bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+
+</head>
+<body>
+    <div id="root">
+        <div id="example"></div>
+        <div id="firstTest"></div>
+        <div id="debug_parent"></div>
+    </div>
+
+    <!-- out/app.js built by webPack -->
+    <!-- contains ReactJS for UI -->
+    <script src="./out/app.js"></script>
+
+    <!-- renderer.js excluded from webpack -->
+    <!-- access to spawn child proc's etc. -->
+    <script src="./renderer.js"></script>
+
+</body>
+</html>
